@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>proclicker</title>
+  <style>
+    body {background-color : powderblue;
+          display : flex;
+          justify-content: center;
+          align-items: center;
+          height : 100vh; 
+          flex-direction: column; color : #667eea
+         }
+      
+    h1 {font-size : 50px;}
+    
+    button {font-size : 15px; 
+            padding: 10px 20px; 
+            border : none;
+           }
+    
+    .plus {
+      background-color: #00ff99;
+      color: black;
+    }
+
+    .minus {
+      background-color: #ff4d4d;
+      color: white;}
+      
+    </style>
+</head>
+
+<body>
+  <h1 id="n">0</h1>
+  
+  <div>
+    <button class="plus" onclick="increase()">Plus +</button>
+    <button class="minus" onclick="decrease()">Minus -</button>
+   </div>
+   
+   
+  <script>
+    let n = 0;
+    
+    function update()  {
+   	    document.getElementById("n").innerText = n;
+    }
+    
+    function increase() {
+        n = n + 1;
+        update();
+    }
+    
+    function decrease() {
+        n = n - 1;
+        update();
+    }
+    
+    </script>
+</body>
+</html>
+     
+    
+
+  
